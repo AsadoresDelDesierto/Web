@@ -56,9 +56,13 @@
                      <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contactanos</a>
                      </li>
+
+
                      <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-                     </li>
+                        <button class="theme-toggle-btn nav-link"class="nav-link">Cambiar Tema</button>
+                    </li>
+
+
                   </ul>
                </div>
             </nav>
@@ -142,9 +146,9 @@
             font-size: 40px;
             color: #8b0000;
             font-weight: bold;">¿Por qué comprar nuestros asadores?</div>
-            <p class="about_text"><p><strong style="color:#d19652;">Compromiso ambiental:</strong> Fabricados con materiales reciclados, ayudamos a reducir el impacto ambiental al transformar componentes en mini asadores de alta calidad.</p>
-            <p><strong style="color:#d19652;">Eficiencia en el asador:</strong> Diseñados para una distribución uniforme del calor, ofrecen una cocción óptima en cada uso.</p>
-            <p><strong style="color:#d19652;">Versatilidad y estilo:</strong> Compactos y prácticos, ideales para patios, terrazas y cualquier espacio donde se viva la tradición del asado.</p>
+            <p class="about_text"><strong style="color:#d19652;">Compromiso ambiental:</strong> Fabricados con materiales reciclados, ayudamos a reducir el impacto ambiental al transformar componentes en mini asadores de alta calidad.</p>
+            <p class="about_text"><strong style="color:#d19652;">Eficiencia en el asador:</strong> Diseñados para una distribución uniforme del calor, ofrecen una cocción óptima en cada uso.</p>
+            <p class="about_text"><strong style="color:#d19652;">Versatilidad y estilo:</strong> Compactos y prácticos, ideales para patios, terrazas y cualquier espacio donde se viva la tradición del asado.</p>
          </div>
       </div>
    </div>
@@ -158,7 +162,7 @@
             <div class="row">
                <div class="col-sm-12">
                   <h1 class="gallery_taital">Nuestros Productos</h1>
-                  <p class="gallery_text">Elaborados con acero reciclado, nuestros mini asadores combinan sostenibilidad y funcionalidad. El acero es ideal para la cocción de las comidas, gracias a su excelente retención y distribución del calor, lo que asegura un resultado uniforme y eficiente. Además, su resistencia garantiza durabilidad, permitiéndote disfrutar de tus asados y comidas durante mucho tiempo, mientras contribuyes al cuidado del medio ambiente.</p>               </p>
+                  <p class="gallery_text ">Elaborados con acero reciclado, nuestros mini asadores combinan sostenibilidad y funcionalidad. El acero es ideal para la cocción de las comidas, gracias a su excelente retención y distribución del calor, lo que asegura un resultado uniforme y eficiente. Además, su resistencia garantiza durabilidad, permitiéndote disfrutar de tus asados y comidas durante mucho tiempo, mientras contribuyes al cuidado del medio ambiente.</p>               </p>
                </div>
             </div>
             <div class="">
@@ -413,6 +417,12 @@
       <script src="js/plugin.js"></script>
       <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>     
+      <script src="js/custom.js"></script> 
+      <script>
+         const themeToggleButton = document.querySelector('.theme-toggle-btn');
+         themeToggleButton.addEventListener('click', () => {
+             document.body.classList.toggle('light-mode'); // Cambia entre modo claro y oscuro
+         });
+     </script>
    </body>
 </html>

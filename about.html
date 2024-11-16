@@ -57,8 +57,8 @@
                         <a class="nav-link" href="contact.html">Contactanos</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-                     </li>
+                        <button class="theme-toggle-btn nav-link"class="nav-link">Cambiar Tema</button>
+                    </li>
                   </ul>
                </div>
             </nav>
@@ -73,6 +73,7 @@
                      <p class="about_text">Crecimos con la tradición de la carne asada en cada reunión familiar.
                         Inspirados por el calor del desierto y el sabor inigualable de nuestra región, decidimos emprender con “Asadores del Desierto”.
                         Queríamos crear algo que no solo fuera práctico sino que también mantuviera vivo el espíritu de la región.
+                     </p>
                </div>
                   <div class="about_text">
                      <div class="about_taital" style="color: #aa2b2b; font-size: 20px;">Misión</div>
@@ -147,6 +148,12 @@
       <script src="js/plugin.js"></script>
       <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>     
+      <script src="js/custom.js"></script>    
+      <script>
+         const themeToggleButton = document.querySelector('.theme-toggle-btn');
+         themeToggleButton.addEventListener('click', () => {
+             document.body.classList.toggle('light-mode'); // Cambia entre modo claro y oscuro
+         });
+     </script>
    </body>
 </html>
