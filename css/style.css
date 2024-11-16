@@ -315,16 +315,18 @@ body.light-mode .navbar .navbar-nav .nav-link {
     width: 100%;
     float: left;
     background-image: url(../images/banner-bg.png);
-    height: auto;
-    background-size: 100%;
-    padding: 10px 0px 25px 0px;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px 0px 25px 0px;
+    position: relative;
 }
 
 .banner_taital {
     width: 100%;
     float: left;
     padding: 100px 0px;
+    text-align: center;
 }
 
 .coffee_text {
@@ -415,7 +417,7 @@ body.light-mode .navbar .navbar-nav .nav-link {
 .about_taital_main {
     width: 100%;
     float: left;
-    padding: 120px 0px;
+    padding: auto;
 }
 
 .about_taital {
@@ -433,7 +435,7 @@ body.light-mode .navbar .navbar-nav .nav-link {
     font-size: 16px;
     color: var(--text-color);
     margin: 0px;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .about_text {
@@ -1063,3 +1065,65 @@ a:hover {
     z-index: 1;
     pointer-events: none; /* Bloquea la interacción */
  }
+
+
+
+
+
+
+
+
+ .payment-options {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+    border: 3px solid #e6e6e6;
+    border-radius: 16px;
+    max-width: 900px;
+    margin: 20px auto;
+    box-shadow: 0 2px 8px rgb(46, 46, 46);
+}
+
+
+.divider {
+    width: 2px;
+    background-color: #9e9d9d;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* Columnas */
+.payment-column {
+    width: 45%;
+    text-align: center;
+}
+
+.payment-column h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Íconos */
+.payment-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaciado entre los íconos */
+    flex-wrap: wrap; /* Permite que los íconos salten de línea en pantallas pequeñas */
+}
+
+.payment-icons img {
+    width: 50px;
+    height: 30px;
+    transition: transform 0.2s;
+}
+
+.payment-icons img:hover {
+    transform: scale(1.8); /* Efecto de zoom al pasar el mouse */
+}
